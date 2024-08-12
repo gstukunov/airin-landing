@@ -1,0 +1,167 @@
+/* Установка высоты для html и body, чтобы обеспечить 100% высоты для всего документа */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-section {
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 200px;
+  align-items: center;
+  padding: 0 350px;
+  background-color: #130816;
+  color: #ffffff;
+  height: 100vh; /* Высота блока равна 100% высоты экрана */
+}
+
+.contacts-with-icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.left {
+}
+
+.left h1 {
+  text-align: right;
+  font-size: 250px;
+  margin: 0;
+  padding: 0;
+  line-height: 220px;
+}
+
+.left p {
+  text-align: right;
+  font-size: 40px;
+}
+
+.right {
+  text-align: left;
+}
+
+.right div {
+  font-size: 56px;
+  font-weight: 400;
+  color: #7569a9;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  margin-bottom: 15px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contact-info a {
+  color: #a698df;
+  text-decoration: none;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #a698df;
+}
+
+.contact-info .card-icon::before {
+  content: "\1F4C4"; /* Unicode character for card */
+}
+
+.contact-info .email-icon::before {
+  content: "\2709"; /* Unicode character for email */
+}
+
+.contact-info .phone-icon::before {
+  content: "\260E"; /* Unicode character for phone */
+}
+
+.logo img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+/* Медиазапросы для адаптивности */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    padding: 20px;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .left,
+  .right {
+    flex: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left h1 {
+    font-size: 60px;
+    line-height: 55px;
+    text-align: left;
+  }
+
+  .left p {
+    text-align: left;
+    font-size: 24px;
+  }
+
+  .right div {
+    font-size: 28px;
+  }
+
+  .contact-info li {
+    font-size: 16px;
+    justify-content: center;
+  }
+
+  .contact-info i {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .left h1 {
+    font-size: 36px;
+  }
+
+  .left p {
+    font-size: 20px;
+  }
+
+  .right h2 {
+    font-size: 24px;
+  }
+
+  .contact-info li {
+    font-size: 14px;
+  }
+
+  .contact-info i {
+    font-size: 18px;
+  }
+}

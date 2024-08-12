@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "Cygre";
+  src: url("../../assets/fonts/Cygre-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Cygre-Light";
+  src: url("../../assets/fonts/Cygre-Light.ttf");
+}
+
+@font-face {
+  font-family: "Cygre-Norm";
+  src: url("../../assets/fonts/Cygre-Regular.ttf");
+}
+
+.phishingKit-container {
+  background-color: #130816;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.hero-container {
+  position: relative;
+  height: 100%;
+  /* height: 100vh; */
+  /* padding: 0 40px 0; */
+}
+
+.aacLogo-phising-kit {
+  position: absolute;
+  margin-top: 20px;
+  left: 1%;
+  width: 260px;
+  height: 80px;
+}
+
+.head-naming-phishing-kit {
+  font-family: "Cygre-Norm";
+  position: absolute;
+  color: white;
+  font-size: 180px;
+  text-align: left;
+  left: 7%;
+  top: 25vh;
+}
+
+.hero {
+  position: absolute;
+  left: 50%;
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .aacLogo-phising-kit {
+    width: 220px;
+    height: 70px;
+    left: 20%;
+  }
+
+  .head-naming-phishing-kit {
+    font-size: 60px;
+    left: 5%;
+    top: 20%;
+  }
+  .hero {
+    left: -7%;
+    top: 35%;
+    width: 430px;
+  }
+}
+
+.apc-stages-summary {
+  width: 100vw;
+  height: 100vh;
+  background-color: #130816;
+  display: flex;
+  flex-direction: column;
+  gap: 250px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.apc-stages-summary-heading {
+  font-family: "Cygre";
+  text-align: center;
+  color: white;
+  font-size: 74px;
+}
+
+.apc-stage-summary-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  width: 90%;
+  align-items: center;
+}
+
+.apc-stage-summary {
+  position: relative;
+  width: 100%;
+  border-top: 3px solid #4c39a0;
+  background-color: #171c2b;
+}
+
+.apc-stages-summary-idx {
+  position: absolute;
+  padding: 15px;
+  top: -10%;
+  color: white;
+  left: 3%;
+  font-size: 30px;
+  font-family: "Cygre-Norm";
+  background-color: #4c39a0;
+  border-radius: 50%;
+}
+
+.apc-stages-summary-text {
+  color: white;
+  padding: 180px 0 120px;
+  font-size: 22px;
+}
+
+.apc-stages-summary-logo {
+  width: 340px;
+  top: -70%;
+  left: 0%;
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  .apc-stages-summary {
+    gap: 150px;
+    height: auto;
+  }
+
+  .apc-stages-summary-heading {
+    font-size: 25px;
+  }
+
+  .apc-stages-summary-logo {
+    width: 250px;
+    top: -50%;
+    left: 10%;
+  }
+
+  .apc-stage-summary-container {
+    flex-direction: column;
+    gap: 150px;
+  }
+
+  .apc-stages-summary-idx {
+    font-size: 22px;
+    padding: 10px;
+    top: -7%;
+    line-height: 20px;
+  }
+
+  .apc-stages-summary-text {
+    font-size: 16px;
+  }
+}

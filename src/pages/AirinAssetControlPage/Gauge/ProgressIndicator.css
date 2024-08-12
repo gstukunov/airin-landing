@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Cygre";
+  src: url("../../../assets/fonts/Cygre-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Cygre-Light";
+  src: url("../../../assets/fonts/Cygre-Light.ttf");
+}
+
+@font-face {
+  font-family: "Cygre-Norm";
+  src: url("../../../assets/fonts/Cygre-Regular.ttf");
+}
+
+.gauge-container-some {
+  width: 200px;
+  height: 110px;
+  background-color: #282d4f;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.font-default {
+  font-family: "Cygre";
+}
+
+@media (max-width: 768px) {
+  .svg-gauge {
+    width: 300px;
+    margin-left: 45px;
+  }
+  .font-default {
+    font-size: 25px;
+  }
+}

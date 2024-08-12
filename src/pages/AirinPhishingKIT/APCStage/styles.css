@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "Cygre";
+  src: url("../../../assets/fonts/Cygre-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Cygre-Light";
+  src: url("../../../assets/fonts/Cygre-Light.ttf");
+}
+
+@font-face {
+  font-family: "Cygre-Norm";
+  src: url("../../../assets/fonts/Cygre-Regular.ttf");
+}
+
+.apc-stage {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  gap: 0;
+  font-size: 27px;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 40px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.apc-stages-logo {
+  position: absolute;
+  width: 150px;
+  top: 3%;
+  left: 87%;
+}
+
+.apc-stage-name {
+  margin-top: 100px;
+  font-family: "Cygre-Norm";
+  font-size: 74px;
+  text-align: left;
+  color: white;
+  z-index: 0;
+  position: relative;
+}
+
+.apc-stages-idx {
+  z-index: -1;
+  font-size: 50px;
+  position: absolute;
+  top: 45%;
+  left: 90%;
+  font-family: "Cygre";
+  background-color: #4c39a0;
+  color: #130816;
+  border-radius: 50%;
+  padding: 55px 20px 0;
+  line-height: 31px;
+}
+
+.apc-stage-heropoints {
+  margin-top: 100px;
+  width: 75%;
+  display: flex;
+  height: fit-content;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  gap: 8%;
+  color: #a8a4d4;
+  font-family: "Cygre-Light";
+}
+
+.apc-stages-point-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: center;
+}
+
+.apc-points-arrow {
+  width: 70px;
+  height: 70px;
+  rotate: 180deg;
+}
+
+.apc-stages-points {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .apc-stage {
+    font-size: 18px;
+    padding-left: 10px;
+    height: auto;
+  }
+  .apc-stages-logo {
+    visibility: hidden;
+  }
+  .apc-stage-name {
+    margin-top: 50px;
+    font-size: 25px;
+  }
+  .apc-stages-idx {
+    font-size: 30px;
+    padding: 30px 5px 0;
+    line-height: 20px;
+  }
+
+  .apc-stage-hero {
+    width: 250px;
+  }
+
+  .apc-stage-heropoints {
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    gap: 0px;
+    width: 90%;
+  }
+  .apc-stages-points {
+    gap: 0;
+  }
+}

@@ -1,0 +1,121 @@
+.form-general {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  padding: 0 0 0 40px;
+  width: 100%;
+  gap: 20px;
+}
+
+.input-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 25%;
+  gap: 5px;
+  color: white;
+  font-size: 25px;
+}
+
+.form-input {
+  color: white;
+  width: 500px;
+  font-size: 40px;
+  height: 70px;
+  background: #171c2b;
+  outline: none;
+  border: none;
+  border-top: 3px solid #4c39a0;
+}
+
+.form-head {
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  text-align: left;
+  padding: 0 0 0 40px;
+}
+
+.checkbox-label {
+  /* width: 50%; */
+  font-size: 15px;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  width: 300px;
+
+  gap: 20px;
+  color: gray;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .input-label {
+    width: 90%;
+    font-size: 16px;
+  }
+  .form-input {
+    width: 100%;
+    font-size: 16px;
+    height: 40px;
+  }
+  .form-head {
+    font-size: 40px;
+    padding: 0 0 0 10px;
+  }
+  .form-container {
+    justify-content: center;
+    padding: 0 0 0 0;
+    margin-top: 0;
+  }
+}
+
+input[type="checkbox"] {
+  accent-color: #4c39a0;
+  width: 140px;
+  height: 140px;
+  background-color: #171c2b;
+}
+
+.button-send {
+  color: white;
+  background-color: #4c39a0;
+  border: none;
+  outline: none;
+  width: 400px;
+  font-size: 25px;
+  height: 50px;
+}
+.button-send:hover {
+  opacity: 0.9;
+}
+
+.disabled-button {
+  background-color: gray;
+  opacity: 0.7;
+}
+.disabled-button:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  input[type="checkbox"] {
+    width: 80px;
+    height: 80px;
+  }
+  .checkbox-label {
+    font-size: 14px;
+    width: 90%;
+  }
+  .button-send {
+    width: 90%;
+    height: 30px;
+    font-size: 18px;
+  }
+}

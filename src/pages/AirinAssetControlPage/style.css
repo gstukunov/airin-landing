@@ -1,0 +1,518 @@
+@font-face {
+  font-family: "Cygre";
+  src: url("../../assets/fonts/Cygre-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Cygre-Light";
+  src: url("../../assets/fonts/Cygre-Light.ttf");
+}
+
+@font-face {
+  font-family: "Cygre-Norm";
+  src: url("../../assets/fonts/Cygre-Regular.ttf");
+}
+
+.default-container {
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #130816;
+}
+
+.header-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.aacLogo {
+  padding: 50px 50px;
+  width: 330px;
+  height: 110px;
+}
+
+.aacHero {
+  width: 750px;
+  height: 940px;
+  position: absolute;
+  top: 34%;
+  right: 10%;
+  z-index: 20;
+}
+
+@media (max-width: 768px) {
+  .aacLogo {
+    width: 220px;
+    height: 70px;
+    padding: auto;
+  }
+  .aacHero {
+    left: -7%;
+    top: 250%;
+    height: auto;
+    width: 350px;
+  }
+}
+
+.header-text-main {
+  position: absolute;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  left: 25%;
+  top: 175%;
+  bottom: 0;
+  z-index: 5;
+}
+
+.header-small {
+  font-size: 80px;
+  line-height: 60px;
+  margin: 0;
+}
+
+.header-big {
+  line-height: 300px;
+  font-size: 330px;
+  color: white;
+  font-family: "Roboto";
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .header-text-main {
+    left: -4%;
+    align-items: flex-end;
+    top: 120%;
+    /* l */
+  }
+  .header-big {
+    line-height: 150px;
+    font-size: 175px;
+  }
+  .header-small {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+
+.background-text {
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: "Roboto";
+  font-weight: bold;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  top: 301%;
+  left: -10%;
+  z-index: 2;
+}
+
+.font-filled {
+  padding-left: 200px;
+  font-size: 75px;
+  line-height: 72px;
+  margin: 0;
+  -webkit-text-stroke: 3px #202434;
+  color: transparent;
+}
+
+.font-fold {
+  font-size: 75px;
+  line-height: 72px;
+  color: #202434;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .background-text {
+    top: 380%;
+    left: -50%;
+  }
+  .font-filled {
+    font-size: 40px;
+    line-height: 38px;
+  }
+  .font-fold {
+    font-size: 40px;
+    line-height: 38px;
+  }
+}
+
+.problematics {
+  margin-top: 803px;
+  height: 980px;
+  display: flex;
+  justify-items: space-between;
+  font-family: "Roboto";
+  text-align: left;
+  font-size: 30px;
+  font-weight: 300;
+  position: relative;
+}
+
+.problems {
+  width: 50%;
+  height: 900px;
+  color: #a8a4d4;
+  padding: 0 0 0 40px;
+  line-height: 45px;
+}
+
+.solution {
+  width: 50%;
+  height: 900px;
+  font-weight: 300;
+  color: white;
+  background-color: #4c39a0;
+  padding: 0 0 0 120px;
+  line-height: 45px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 74px;
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
+.description {
+  width: 98%;
+}
+
+.question-mark {
+  font-family: "Cygre";
+  position: absolute;
+  font-size: 200px;
+  top: 40%;
+  left: -30%;
+}
+
+.points {
+  margin-top: 100px;
+  margin-left: 170px;
+  position: relative;
+  width: 50%;
+}
+
+.points-solution {
+  margin-top: 160px;
+  margin-left: 240px;
+}
+
+.points-idea {
+  position: absolute;
+  top: -25%;
+  left: -40%;
+}
+
+.problematics-airin {
+  position: absolute;
+  height: 650px;
+  bottom: 0%;
+  left: 30.25%;
+}
+
+.problematics-black {
+  position: absolute;
+  height: 650px;
+  bottom: 0%;
+  left: 30.25%;
+}
+
+.small-logo {
+  position: absolute;
+  right: 0;
+  left: 91%;
+  top: 5%;
+  width: 140px;
+}
+
+@media (max-width: 768px) {
+  .problematics {
+    height: auto;
+    margin-top: 715px;
+    flex-direction: column;
+    font-size: 18px;
+  }
+  .problems {
+    height: 100vh;
+    line-height: 25px;
+    padding: 0;
+    width: 100%;
+  }
+  .description {
+    margin-left: 10px;
+  }
+  .solution {
+    line-height: 25px;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+  }
+  .title {
+    margin-top: 40px;
+
+    font-size: 40px;
+    margin-left: 10px;
+  }
+  .small-logo {
+    visibility: hidden;
+  }
+  .question-mark {
+    visibility: hidden;
+  }
+  .points {
+    margin: 0;
+  }
+  .problematics-black {
+    height: 400px;
+    top: 20%;
+    left: 46%;
+  }
+  .points-solution {
+    margin: 10px;
+  }
+  .points-idea {
+    visibility: hidden;
+  }
+  .problematics-airin {
+    height: 400px;
+    /* top: 20%; */
+    left: 45%;
+  }
+}
+
+.result {
+  height: 835px;
+  position: relative;
+  margin-top: 30px;
+}
+
+.upgrades-text {
+  color: #a8a4d4;
+  font-size: 22px;
+  text-align: left;
+}
+
+.upgrades-head {
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.result-title {
+  margin-top: 55px;
+  margin-left: 35px;
+}
+
+.upgrades-main {
+  width: 50%;
+  height: 800px;
+}
+
+.upgrades-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.upgrades-scale {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 124px;
+  color: white;
+  height: 300px;
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .result {
+    height: auto;
+    margin-top: 0;
+  }
+  .result-title {
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+  .upgrades-text {
+    font-size: 16px;
+  }
+  .upgrades-head {
+    font-size: 40px;
+    margin-left: 0;
+  }
+  .upgrades-container {
+    flex-direction: column;
+  }
+  .upgrades-scale {
+    padding-top: 0;
+    padding-left: 10px;
+  }
+}
+
+/* .perc {
+  font-size: 50px;
+  padding-top: 5px;
+} */
+
+.perc-wrapper {
+  font-family: "Cygre-Norm";
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  top: 15%;
+  position: absolute;
+}
+
+.perc-info {
+  font-size: 28px;
+  font-family: "Cygre-Light";
+  width: 15%;
+  position: absolute;
+  top: 68%;
+}
+
+@media (max-width: 768px) {
+  .upgrades-main {
+    width: 80%;
+    height: auto;
+  }
+  .result {
+    height: auto;
+    margin-top: 0;
+  }
+  .result-title {
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+  .upgrades-text {
+    font-size: 16px;
+  }
+  .upgrades-head {
+    font-size: 40px;
+    margin-left: 0;
+  }
+  .upgrades-container {
+    flex-direction: column;
+  }
+  .upgrades-scale {
+    padding-top: 0;
+    padding-left: 10px;
+  }
+  .perc-wrapper {
+    position: initial;
+  }
+  .perc-info {
+    top: 37%;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    left: -2%;
+  }
+}
+
+.upgrades-info {
+  color: white;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+
+.upgrades-data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.upgrades-in {
+  font-family: "Cygre-Light";
+  font-weight: 300;
+  font-size: 25px;
+  position: absolute;
+  left: -40%;
+  top: 10%;
+}
+
+.upgrades-quantity {
+  position: relative;
+  font-family: "Cygre";
+  font-size: 100px;
+  padding: 0;
+  margin: 0;
+  font-weight: 800;
+}
+
+.upgrades-data-text {
+  width: 70%;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.upgrades-points {
+  width: 70%;
+  height: 400px;
+  gap: 0;
+  display: flex;
+  padding: 0 10px 0 30px;
+  align-items: flex-start;
+  /* justify-content: space-around; */
+  flex-direction: column;
+  margin-left: 25px;
+
+  font-size: 25px;
+  font-weight: 300;
+  li::marker {
+    color: #4c39a0;
+  }
+}
+
+.upgrades-points-container {
+  position: relative;
+  padding-top: 30px;
+  ::before {
+    content: "";
+    position: absolute;
+    background: #4c39a0;
+    width: 3px;
+    z-index: 1000;
+    height: 120px;
+    left: -2%;
+  }
+}
+
+@media (max-width: 768px) {
+  .upgrades-info {
+    padding-left: 32px;
+    margin-top: 50px;
+  }
+  .upgrades-in {
+    left: -70%;
+    top: 0;
+    font-size: 20px;
+  }
+  .upgrades-quantity {
+    font-size: 50px;
+  }
+  .upgrades-data-text {
+    width: 100%;
+    font-size: 18px;
+  }
+  .upgrades-points {
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+    font-size: 18px;
+  }
+}
