@@ -1,5 +1,6 @@
 import { FC, useState } from "react";
 import "./style.css";
+import emailjs from "emailjs-com";
 
 import aacLogo from "../../assets/png/AACLogo.png";
 
@@ -24,6 +25,21 @@ export const Form: FC<FormProps> = ({ page }) => {
     phoneNumber: "",
   });
   const [isAgreed, setAgreed] = useState<boolean>(false);
+
+  const sendEmail = () => {
+    const message = `страница отправки: ${form.page}, имя: ${form.name}, email: ${form.email}, номер телефона: ${form.phoneNumber}, должность: ${form.jobPosition}, компания: ${form.company}`;
+
+    emailjs
+      .send("gmail", "template_9ah2pzb", { message }, "eeUi38jLiucRdiCIz")
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   return (
     <div className="form-general">
@@ -88,6 +104,7 @@ export const Form: FC<FormProps> = ({ page }) => {
           персональных данных ознакомлен
         </label>
         <button
+          onClick={sendEmail}
           disabled={!isAgreed || !form.email || !form.name || !form.phoneNumber}
           className={`button-send ${
             !isAgreed || !form.email || !form.name || !form.phoneNumber
