@@ -9,6 +9,7 @@ import { Links } from "../../components/Links";
 const links = [
   { name: "Airin Asset Control", path: "/airin-asset-control" },
   { name: "Airin phishing KIT", path: "/airin-phishing-kit" },
+  { name: "Портфель услуг", path: "/company-profile", },
   // { name: "О нас", path: "/about-us" },
 ];
 

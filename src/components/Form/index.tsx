@@ -30,7 +30,12 @@ export const Form: FC<FormProps> = ({ page }) => {
     const message = `страница отправки: ${form.page}, имя: ${form.name}, email: ${form.email}, номер телефона: ${form.phoneNumber}, должность: ${form.jobPosition}, компания: ${form.company}`;
 
     emailjs
-      .send("gmail", "template_9ah2pzb", { message }, "eeUi38jLiucRdiCIz")
+      .send(
+        "service_dkp7lxo",
+        "template_9ah2pzb",
+        { message },
+        "eeUi38jLiucRdiCIz"
+      )
       .then(
         (result) => {
           console.log(result.text);

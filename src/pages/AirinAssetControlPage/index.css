@@ -13,10 +13,10 @@ body {
   justify-content: center;
   gap: 200px;
   align-items: center;
-  padding: 0 350px;
+  padding: 100px 350px;
   background-color: #130816;
   color: #ffffff;
-  height: 100vh; /* Высота блока равна 100% высоты экрана */
+  height: 100vh;
 }
 
 .contacts-with-icons {
