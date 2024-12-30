@@ -1,0 +1,14 @@
+.textBlock {
+  width: 100%;
+  height: 100vh;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 45%;
+  background-image: url("./../../../../assets/images/laptop.png");
+}
+
+@media screen and (max-width: 1280px) {
+  .textBlock {
+    background-image: none;
+  }
+}
